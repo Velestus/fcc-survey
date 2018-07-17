@@ -1,0 +1,80 @@
+#survey-form {
+    width: 80vw;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowTab {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column-gap: 50px;
+    grid-template-columns: 50% 50%;
+    padding: 20px 0 0 0;
+}
+.labels {
+    text-align: right;
+    font-size: 1.2em;
+}
+.inputs {
+    text-align: left;
+}
+.inputs > * {
+    height: 24px;
+}
+.inputs > input {
+    width: 80%;
+}
+.inputs > select {
+    width: 40%;
+    cursor: pointer;
+}
+.checkboxes {
+    display: flex;
+}
+#comments {
+    height: 50px;
+    width: 80%;
+}
+input[type='checkbox'], input[type='radio'] {
+    cursor: pointer;
+}
+#submit {
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: hsl(240, 50%, 20%);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 833px) {
+    .inputs > select {
+        width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .rowTab {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-template-columns: 100%;
+        padding: 20px 0 0 0;
+    }
+    .labels {
+        text-align: left;
+    }
+    .inputs > select {
+        width: 100%;
+    }
+    .inputs > input {
+        width: 100%;
+    }
+  }

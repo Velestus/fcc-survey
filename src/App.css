@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(240, 35%, 90%);
+}
+.App-container {
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App-header {
+  background-color: hsl(240, 50%, 35%);
+  height: 70px;
+  padding: 20px;
+  width: 100%;
+  color: white;
+}
+
+#description {
+  font-size: 1.2em;
+}
+footer {
+  font-size: 12px;
+  font-style: italic;
+}
